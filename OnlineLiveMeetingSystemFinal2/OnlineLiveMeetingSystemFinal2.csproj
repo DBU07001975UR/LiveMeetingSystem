@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B628BE5-B312-44B6-9913-3A3AE32D7071}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineLiveMeetingSystemFinal2</RootNamespace>
+    <AssemblyName>OnlineLiveMeetingSystemFinal2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\AuthorizedDefault.aspx" />
+    <Content Include="GUI\ExceptionPage.aspx" />
+    <Content Include="GUI\FileBufferReader.js" />
+    <Content Include="GUI\getMediaElement.js" />
+    <Content Include="GUI\JoinMeeting.aspx" />
+    <Content Include="GUI\ErrorPage.aspx" />
+    <Content Include="GUI\Mp3Recreational.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\back.jpg" />
+    <Content Include="Images\back1.jpg" />
+    <Content Include="Images\back2.jpg" />
+    <Content Include="Images\back3.jpg" />
+    <Content Include="Images\back4.jpg" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\gmail.png" />
+    <Content Include="Images\headre1.jpg" />
+    <Content Include="Images\headre2.jpg" />
+    <Content Include="Images\headre3.jpg" />
+    <Content Include="Images\headre4.jpg" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\key_lock-animated.gif" />
+    <Content Include="Images\login.jpg" />
+    <Content Include="Images\login1.jpg" />
+    <Content Include="Images\loginhere.jpg" />
+    <Content Include="Images\meeting1.jpg" />
+    <Content Include="Images\meeting2.jpg" />
+    <Content Include="Images\meeting3.jpg" />
+    <Content Include="Images\meeting4.jpg" />
+    <Content Include="Images\meeting5.jpg" />
+    <Content Include="Images\meeting6.jpg" />
+    <Content Include="Images\meeting7.jpg" />
+    <Content Include="Images\meeting8.jpg" />
+    <Content Include="Images\twiter.png" />
+    <Content Include="Images\WIN_20180416_09_31_56_Pro.jpg" />
+    <Content Include="Scripts\getMediaElement.css" />
+    <Content Include="GUI\ConductMeeting.aspx" />
+    <Content Include="Scripts\Robot-Speaker.js" />
+    <Content Include="Scripts\Translator.js" />
+    <Content Include="GUI\Login2.aspx" />
+    <Content Include="GUI\MusicRecreational.aspx" />
+    <Content Include="GUI\VoteImages\confirm5.png" />
+    <Content Include="GUI\VoteImages\hand_raising1.png" />
+    <Content Include="GUI\VoteImages\speaking.png" />
+    <Content Include="GUI\VoteImages\speaking4.png" />
+    <Content Include="GUI\DeleteCandidates.aspx" />
+    <Content Include="GUI\StoreCandidate.aspx" />
+    <Content Include="GUI\GeneralizedMinutes.aspx" />
+    <Content Include="Images\._item.png" />
+    <Content Include="Images\buttons.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\fireworks.jpg" />
+    <Content Include="Images\GettyImages.jpg" />
+    <Content Include="Images\hand_raising.jpg" />
+    <Content Include="Images\item.png" />
+    <Content Include="Images\OLMSPS.JPG" />
+    <Content Include="Images\th %281%29.jpg" />
+    <Content Include="Images\th %2810%29.jpg" />
+    <Content Include="Images\th %2811%29.jpg" />
+    <Content Include="Images\th %2812%29.jpg" />
+    <Content Include="Images\th %2813%29.jpg" />
+    <Content Include="Images\th1.jpg" />
+    <Content Include="Images\th %283%29.jpg" />
+    <Content Include="Images\th %284%29.jpg" />
+    <Content Include="Images\th %285%29.jpg" />
+    <Content Include="Images\th %286%29.jpg" />
+    <Content Include="Images\th %287%29.jpg" />
+    <Content Include="Images\th %288%29.jpg" />
+    <Content Include="Images\th %289%29.jpg" />
+    <Content Include="Images\th.jpg" />
+    <Content Include="GUI\Logout.aspx" />
+    <Content Include="GUI\AssignRole.aspx" />
+    <Content Include="GUI\CreateAccount.aspx" />
+    <Content Include="GUI\ForgotPassword.aspx" />
+    <Content Include="GUI\NewUserPassword.aspx" />
+    <Content Include="GUI\UpdateAccount.aspx" />
+    <Content Include="GUI\ViewUserAccount.aspx" />
+    <Content Include="GUI\DeleteFile.aspx" />
+    <Content Include="GUI\StoreFile.aspx" />
+    <Content Include="GUI\ViewFile.aspx" />
+    <Content Include="GUI\CreateGroup.aspx" />
+    <Content Include="GUI\DeleteGroup.aspx" />
+    <Content Include="GUI\UpdateGroup.aspx" />
+    <Content Include="GUI\ViewGroup.aspx" />
+    <Content Include="GUI\DeleteSchedule.aspx" />
+    <Content Include="GUI\PrepareSchedule.aspx" />
+    <Content Include="GUI\UpdateSchedule.aspx" />
+    <Content Include="GUI\ViewSchedule.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="GUI\Attendance.aspx" />
+    <Content Include="GUI\ViewMinutes.aspx" />
+    <Content Include="Scripts\adapter-latest.js" />
+    <Content Include="Scripts\CodecsHandler.js" />
+    <Content Include="Scripts\CustomeGetUserMediaBar.js" />
+    <Content Include="Scripts\embed.js" />
+    <Content Include="Scripts\getMediaElement.min.js" />
+    <Content Include="Scripts\IceServersHandler.js" />
+    <Content Include="Scripts\media-player.js" />
+    <Content Include="Scripts\PreRecordedMediaStreamer.js" />
+    <Content Include="Scripts\RecordRTC.js" />
+    <Content Include="Scripts\Rollbar.js" />
+    <Content Include="Scripts\RTCMultiConnection.js" />
+    <Content Include="GUI\RTCMultiConnection.min.js" />
+    <Content Include="Scripts\Socket.io.js" />
+    <EmbeddedResource Include="GUI\Site.Master" />
+    <Content Include="GUI\Default.Master" />
+    <Content Include="GUI\Socket.io.js" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Style\Font\glyphicons-halflings-regular.eot" />
+    <Content Include="Style\Font\glyphicons-halflings-regular.ttf" />
+    <Content Include="Style\Font\glyphicons-halflings-regular.woff" />
+    <Content Include="Style\Font\glyphicons-halflings-regular.woff2" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Style\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Style\css\bootstrap-theme.css" />
+    <Content Include="Style\css\bootstrap-theme.min.css" />
+    <Content Include="Style\css\bootstrap.css" />
+    <Content Include="Style\css\bootstrap.min.css" />
+    <Content Include="Style\fontawesome.css" />
+    <Content Include="Style\fontawesome.min.css" />
+    <Content Include="Style\Font\glyphicons-halflings-regular.svg" />
+    <Content Include="Style\js\bootstrap.js" />
+    <Content Include="Style\js\bootstrap.min.js" />
+    <Content Include="Style\js\jquery.min.js" />
+    <Content Include="Style\js\npm.js" />
+    <Content Include="Style\MainStyle.css" />
+    <Content Include="Style\style.css" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\LiveMeetingSystem.dbu.edu.et.pubxml" />
+    <None Include="Properties\PublishProfiles\LiveMeetingSystem.pubxml" />
+    <None Include="Properties\PublishProfiles\LiveMeetingSystemFinal.pubxml" />
+    <None Include="Properties\PublishProfiles\OnlineLiveMeetingSystem.pubxml" />
+    <None Include="Properties\PublishProfiles\www.LiveMeetingSystem.dbu.edu.et.pubxml" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GUI\About.aspx" />
+    <Content Include="GUI\Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="GUI\Help.aspx" />
+    <Content Include="Images\Audio.png" />
+    <Content Include="Images\AudioReorded.png" />
+    <Content Include="Images\ClosedAudio.png" />
+    <Content Include="Images\ClosedVideo.png" />
+    <Content Include="Images\CloseMenu.png" />
+    <Content Include="Images\DBU.JPG" />
+    <Content Include="Images\FullScreen.png" />
+    <Content Include="Images\minimize.png" />
+    <Content Include="Images\RecordAudio.png" />
+    <Content Include="Images\RecordVideo.png" />
+    <Content Include="Images\Takesnapshoot.png" />
+    <Content Include="Images\unmutevideo.png" />
+    <Content Include="Images\Video.png" />
+    <Content Include="Images\VideoRecorded.png" />
+    <Content Include="GUI\Login.aspx" />
+    <Content Include="GUI\ChangePassword.aspx" />
+    <Content Include="GUI\ChangePasswordSuccess.aspx" />
+    <Content Include="GUI\UserProfile.aspx" />
+    <Content Include="Images\hand.jpg" />
+    <Content Include="GUI\VoteImages\hand_raising.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AuthorizedDefault.aspx.cs">
+      <DependentUpon>AuthorizedDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AuthorizedDefault.aspx.designer.cs">
+      <DependentUpon>AuthorizedDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ExceptionPage.aspx.cs">
+      <DependentUpon>ExceptionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ExceptionPage.aspx.designer.cs">
+      <DependentUpon>ExceptionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\JoinMeeting.aspx.cs">
+      <DependentUpon>JoinMeeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\JoinMeeting.aspx.designer.cs">
+      <DependentUpon>JoinMeeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ConductMeeting.aspx.cs">
+      <DependentUpon>ConductMeeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ConductMeeting.aspx.designer.cs">
+      <DependentUpon>ConductMeeting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DeleteCandidates.aspx.cs">
+      <DependentUpon>DeleteCandidates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DeleteCandidates.aspx.designer.cs">
+      <DependentUpon>DeleteCandidates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Mp3Recreational.aspx.cs">
+      <DependentUpon>Mp3Recreational.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Mp3Recreational.aspx.designer.cs">
+      <DependentUpon>Mp3Recreational.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MusicRecreational.aspx.cs">
+      <DependentUpon>MusicRecreational.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\MusicRecreational.aspx.designer.cs">
+      <DependentUpon>MusicRecreational.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SisWeb\DropDownFill.cs" />
+    <Compile Include="GUI\StoreCandidate.aspx.cs">
+      <DependentUpon>StoreCandidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\StoreCandidate.aspx.designer.cs">
+      <DependentUpon>StoreCandidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GeneralizedMinutes.aspx.cs">
+      <DependentUpon>GeneralizedMinutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\GeneralizedMinutes.aspx.designer.cs">
+      <DependentUpon>GeneralizedMinutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AssignRole.aspx.cs">
+      <DependentUpon>AssignRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AssignRole.aspx.designer.cs">
+      <DependentUpon>AssignRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CreateAccount.aspx.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CreateAccount.aspx.designer.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewUserPassword.aspx.cs">
+      <DependentUpon>NewUserPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\NewUserPassword.aspx.designer.cs">
+      <DependentUpon>NewUserPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateAccount.aspx.cs">
+      <DependentUpon>UpdateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateAccount.aspx.designer.cs">
+      <DependentUpon>UpdateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ViewUserAccount.aspx.cs">
+      <DependentUpon>ViewUserAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ViewUserAccount.aspx.designer.cs">
+      <DependentUpon>ViewUserAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DeleteFile.aspx.cs">
+      <DependentUpon>DeleteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DeleteFile.aspx.designer.cs">
+      <DependentUpon>DeleteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StoreFile.aspx.cs">
+      <DependentUpon>StoreFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\StoreFile.aspx.designer.cs">
+      <DependentUpon>StoreFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ViewFile.aspx.cs">
+      <DependentUpon>ViewFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ViewFile.aspx.designer.cs">
+      <DependentUpon>ViewFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CreateGroup.aspx.cs">
+      <DependentUpon>CreateGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CreateGroup.aspx.designer.cs">
+      <DependentUpon>CreateGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DeleteGroup.aspx.cs">
+      <DependentUpon>DeleteGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DeleteGroup.aspx.designer.cs">
+      <DependentUpon>DeleteGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateGroup.aspx.cs">
+      <DependentUpon>UpdateGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateGroup.aspx.designer.cs">
+      <DependentUpon>UpdateGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ViewGroup.aspx.cs">
+      <DependentUpon>ViewGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ViewGroup.aspx.designer.cs">
+      <DependentUpon>ViewGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DeleteSchedule.aspx.cs">
+      <DependentUpon>DeleteSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\DeleteSchedule.aspx.designer.cs">
+      <DependentUpon>DeleteSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PrepareSchedule.aspx.cs">
+      <DependentUpon>PrepareSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\PrepareSchedule.aspx.designer.cs">
+      <DependentUpon>PrepareSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateSchedule.aspx.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\UpdateSchedule.aspx.designer.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ViewSchedule.aspx.cs">
+      <DependentUpon>ViewSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ViewSchedule.aspx.designer.cs">
+      <DependentUpon>ViewSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ViewMinutes.aspx.cs">
+      <DependentUpon>ViewMinutes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ViewMinutes.aspx.designer.cs">
+      <DependentUpon>ViewMinutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Scripts\Socket.io\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineLiveMeetingSystemFinal2BL\OnlineLiveMeetingSystemFinal2BL.csproj">
+      <Project>{4228F61F-64C6-406F-A281-A4BB1344B6E2}</Project>
+      <Name>OnlineLiveMeetingSystemFinal2BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2433</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6588/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

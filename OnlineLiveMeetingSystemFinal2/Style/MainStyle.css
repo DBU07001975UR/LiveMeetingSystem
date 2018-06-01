@@ -1,0 +1,184 @@
+﻿
+.page
+{
+    
+    width: 1250px;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+    min-height:720px;
+}
+.divTotal {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 1250px;
+    background-color: transparent;
+    min-height: 720px;
+}
+
+.tableTotal {
+   width: 1250px;
+    height: 100%;
+}
+/*Header*/
+.divHeadr {
+    width: 1250px;
+    height: 80px;
+    background: #78858a;
+    /*background-color:#b5bbbf;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.16), 0 12px 11px 0 rgb(128, 128, 128);
+}
+
+.divImg {
+    /*background-color:blueviolet;*/
+    width: 18%;
+    margin-left: 0%;
+    float: left;
+    height: 75px;
+    border-top-left-radius: 10px;
+    /*border-top-right-radius:100px;*/
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#Image1 {
+    border-radius: 10px;
+}
+
+.divtitlename {
+    color: white;
+    width: 60%;
+    float: left;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.divtitle {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+.txtDBUTitle {
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: center;
+    text-shadow: 0 2.5px 5px 0 #877186, 0 2.5px 6px 0 rgb(128, 128, 128);
+    /*margin-left:10%;
+    width:100%;*/
+}
+
+.txtLiveTitle {
+    font-weight: bold;
+    font-size: 18pt;
+    text-shadow: 0 3px 2px 0 #877186, 0 5px 11px 0 rgb(128, 128, 128);
+    /*text-align :center;
+    margin-left:30%;*/
+}
+
+.divHeaderend {
+    /*background-color:slategrey;*/
+    width: 20%;
+    float: right;
+    height: 80px;
+    /*border-top-left-radius:100px;*/
+    border-top-right-radius: 10px;
+}
+
+#DropDownLanguage {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#labDate {
+    float: right;
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+/*div login logout*/
+/*for fotter*/
+.divFooter {
+    background-color: silver;
+    box-shadow: 0 3px 10px 0 black, 0 5px 11px 0 rgb(128, 128, 128);
+    text-align: center;
+    height: 25px;
+    font-weight: bold;
+    font-family: Times New Roman;
+    font-size: larger;
+    width: 1250px;
+}
+/*Home page befor Login*/
+.divUserInformation {
+    border: solid;
+    margin-top: 5px;
+    border-bottom-width: 8px;
+    border-color: lightgrey;
+    background-color: transparent;
+    min-height: 450px;
+    text-align: center;
+}
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.Foralluser {
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Book';
+    text-decoration: underline;
+    font-size: 20px;
+}
+/*for all*/
+.divSpan {
+    background-color: #286e81;
+    color:white;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.tdLeft {
+    text-align: right;
+    width: 200px;
+}
+
+.tdRight {
+    text-align: left;
+    width: 200px;
+}
+
+.Button {
+    background-color: gainsboro;
+    width: 90px;
+    box-shadow: 0 3px 10px 0 black, 0 5px 11px 0 #0026ff;
+    border-radius: 7px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.Dropdown {
+    background-color: #bacde5;
+    border-color: darkslateblue;
+}
+/*data gridview*/
+.divDatagridView {
+    width: 710px;
+    min-height: 50px;
+    background-color: #a8b0ba;
+    padding: 10px;
+    margin-left: 10%;
+    border-radius: 20px;
+}
